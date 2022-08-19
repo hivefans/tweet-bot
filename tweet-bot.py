@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-work_dir = os.path.dirname(__file__) + "/session"
+work_dir = os.path.dirname(os.path.abspath(__file__)) + "/session"
 if not os.path.exists(work_dir):
     os.makedirs(work_dir)
 
