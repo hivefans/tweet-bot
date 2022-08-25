@@ -45,7 +45,7 @@ class TwitterBot:
             element_login.click()
             time.sleep(2) 
             loginError = bot.find_elements_by_xpath(
-                "//span[contains(text(), 'match our records')]")  # not the best solution, sometimes works with few words
+                "//span[contains(text(), 'Wrong password!')]")  # not the best solution, sometimes works with few words
             if not loginError:
                 print("Login Successful!")
                 return True
